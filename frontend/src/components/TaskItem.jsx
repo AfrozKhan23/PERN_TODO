@@ -7,7 +7,7 @@ const TaskItem = ({ task, deleteTask }) => {
         <h3 className="font-bold text-2xl pb-2 text-cyan-900">{task.title}</h3>
 
         {/* Scrollable Description */}
-        <div className="overflow-y-auto max-h-[400px]">
+        <div className="overflow-y-auto max-h-[200px] w-full overflow-x-hidden">
           <p className="font-semibold text-base pb-4 text-cyan-600">
             {task.description}
           </p>
