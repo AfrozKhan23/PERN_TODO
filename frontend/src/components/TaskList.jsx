@@ -1,4 +1,3 @@
-import React from "react";
 import TaskItem from "./TaskItem.jsx";
 import useTasksStore from "../state/useTasksStore.js";
 
@@ -12,7 +11,7 @@ const TaskList = () => {
         Tasks
       </h2>
       <ul className="mt-4 flex flex-wrap justify-start gap-20">
-        {tasks.map((task) => (
+        {tasks?.map((task) => (
           <TaskItem key={task.id} task={task} deleteTask={deleteTask} />
         ))}
       </ul>
